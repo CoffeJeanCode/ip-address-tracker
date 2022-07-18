@@ -1,0 +1,103 @@
+.container {
+  background-image: url("/images/pattern-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 15rem;
+}
+
+.wrapper {
+  margin: auto;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  padding: 1.2rem 1rem;
+  margin: 0;
+  color: #fff;
+  font-weight: 500;
+}
+
+.inputContainer {
+  min-width: 40vw;
+  display: flex;
+  margin: 2rem 0;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.input {
+  padding: 0 2rem;
+  font-size: 1.125rem;
+  flex-grow: 1;
+  outline: none;
+  border: none;
+}
+
+.button {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--Very-Dark-Gray);
+  line-height: 1rem;
+  border: none;
+  outline: none;
+}
+.button:hover {
+  background: var(--Dark-Gray);
+}
+
+.ipInfoContainer {
+  min-width: 70vw;
+  min-height: 8.7rem;
+  transform: translateY(90px);
+  margin: 1rem 0;
+  background-color: #fff;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 33px 60px 15px rgb(0 0 0 / 10%);
+}
+
+.ipInfoContainer div {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 0 1rem;
+  border-right: 0.1rem solid var(--Dark-Gray);
+  transform: translateY(-10px);
+}
+
+.ipInfoContainer div:last-of-type {
+  border: none;
+}
+
+.ipInfoTitle {
+  color: var(--Dark-Gray);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+.ipInfoContent {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--Very-Dark-Gray);
+}
+
+@media (max-width: 425px) {
+  .ipInfoContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.3rem 0;
+  }
+  .ipInfoContainer div {
+    border: none;
+    align-items: center;
+  }
+}

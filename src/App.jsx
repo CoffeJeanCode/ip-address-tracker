@@ -1,17 +1,14 @@
-import React from 'react'
-import Header from './componets/Header'
-import Map from './componets/Map'
-
+import React from "react";
+import Header from "./components/Header";
+import MapView from "./components/Map";
+import "./global.css";
 const App = () => {
-
   return (
     <div>
       <Header />
-      <Map />
+      <MapView />
     </div>
-  )
-}
+  );
+};
 
-// https://geo.ipify.org/api/v1?apiKey=IP_KEY&ipAddress=8.8.8.8
-
-export default App
+export default App;
